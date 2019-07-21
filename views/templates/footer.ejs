@@ -1,0 +1,20 @@
+</body>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url:"/api/welcome",
+            type:'GET' ,
+            contentType:"application/json",
+            success:function(response) {
+            
+                    
+            },
+            error:function(error){
+            HK.shadow.hide();
+            alert("Something went wrong!")
+            $('.bulkOffersSec').hide();
+            }
+        });
+    })
+</script>
+</html>
